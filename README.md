@@ -10,10 +10,10 @@ The goals / steps of this project are the following:
 - Analyze the softmax probabilities of the new images
 - Summarize the results with a written report
 
-##code
+# code
 Here is an explanation of how I approached this project. If you want to dive in the code
 
-##Data Set Summary & Exploration
+# Data Set Summary & Exploration
 
 1.Dataset presentation
 
@@ -56,12 +56,15 @@ Here is an visualization of some 5 randomly picked training examples for each cl
 1. Image preprocessing
 
 Question 1:
+
 Describe how you preprocessed the data. Why did you choose that technique?
 
 Answer
+
 Following a published baseline model on this problem I applied similar normalization and image enhancements . Images were transformed in the YUV space and adjusted by histogram sketching and by increasing sharpness. Finally only the Y channel was selected as in some preliminary experiments full color images seem to confuse the classifier (as also reported in the published baseline), the latter effect however may depend on the network architecture, as in the long term we would intuitively expect to have networks trained with full color images to perform better.
 
 ROI Cropping
+
 For each image of each dataset, a region of interest is provided. It gives a precise location to where the sign actually is. In order to maximize my chances that the model is going to learn features from the sign I crop the background to remove the noise as much as possible.
 
 §§§
