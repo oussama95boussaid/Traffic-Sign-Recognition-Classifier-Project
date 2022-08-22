@@ -10,6 +10,9 @@ The goals / steps of this project are the following:
 - Analyze the softmax probabilities of the new images
 - Summarize the results with a written report
 
+# *Rubric Points*
+Here I will consider the rubric points individually and describe how I addressed each point in my implementation. 
+This is a summary. Continue further to read each in depth.
 # code
 Here is an explanation of how I approached this project. If you want to dive in the code
 
