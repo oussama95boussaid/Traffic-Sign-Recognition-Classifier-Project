@@ -100,7 +100,7 @@ In order to do so, I created 2 functions.
 
 The first idea is to rotate the image a little bit. The angle is determined randomly and bounded between -15° and +15°. It wouldn't make sense to rotate them more than that since the car would never see traffic sign that are upside down. It is worth noticing that it could be interesting to do so for another dataset like classify galaxies! for example.
 
-<img src="Test_Img/roi_exm2.png"  title="Rotation">
+<img src="Test_Img/ROI_normalize & Rotate.png"  title="Rotation">
 
 *2. Model architecture.*
 
