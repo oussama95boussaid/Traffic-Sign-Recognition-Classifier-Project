@@ -62,7 +62,7 @@ Most rare signs:
 -
 Here is an visualization of some 5 randomly picked training examples for each class. As we can see, within each class there is a high variability in appearance due to different weather conditions, time of the day and image angle.
 
-<img src="Test_Img/roi_exm2.png"  title="random_Exp">
+<img src="random_examples.png"  title="random_Exp">
 
 #Design and Test a Model Architecture
 
