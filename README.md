@@ -122,10 +122,10 @@ Adam offers several advantages over the simple tf.train.GradientDescentOptimizer
 
 Theses images have the same meaning that the ones of the German dataset but some might have some small differences like of example the presence of km/h on the 30 km/h speed limit sign or the width of some arrows. Other that that, these images do not present major problems of visibility that might trick the model but in order to perform well on these images, it comes down to how good were the images of the training data. I want to highlight here that I believe that these images were not very clear. I had a hard time determining the class of many of the images in the dataset myself.
 
-<img src="test-traffic-signs/1x.pngAlexNet Architecture">
+<img src="test-traffic-signs/Teststop.png" title="testImage">
 
 *2. Predictions labels of these images and their top 5 softmax probabilities*
 
-<img src="learning_curve.png"  title="AlexNet Architecture">
+<img src="learning_curve.png"  title="learning_curve">
 
 
