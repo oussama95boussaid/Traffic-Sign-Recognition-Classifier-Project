@@ -62,7 +62,7 @@ Most rare signs:
 -
 Here is an visualization of some 5 randomly picked training examples for each class. As we can see, within each class there is a high variability in appearance due to different weather conditions, time of the day and image angle.
 
-<img src="roi_exm2.png"  title="AlexNet Architecture">
+<img src="Test_Img/roi_exm2.png"  title="random_Exp">
 
 #Design and Test a Model Architecture
 
@@ -80,13 +80,13 @@ Following a published baseline model on this problem I applied similar normaliza
 
 For each image of each dataset, a region of interest is provided. It gives a precise location to where the sign actually is. In order to maximize my chances that the model is going to learn features from the sign I crop the background to remove the noise as much as possible.
 
-<img src="roi_exm2.png"  title="AlexNet Architecture">
+<img src="Test_Img/roi_exm2.png"  title="ROI">
 
 *Normalization*
 
 What is recommended to do is to center the data so it has 0 mean. Instead, I remove 180 to each RGB channels. It is very similar and would perform well for my model. I normalized the scale of each image to range between -1 and 1. This allows a better convergence of the model because the computation of the gradient is facilitated.
 
-<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
+<img src="Test_Img/roi_exm2.png"  title="Normalization">
 
 It is important to note that the normalization needs to be applied to every set (training, validation et test sets) in order to train a working model.
 
@@ -100,7 +100,7 @@ In order to do so, I created 2 functions.
 
 The first idea is to rotate the image a little bit. The angle is determined randomly and bounded between -15° and +15°. It wouldn't make sense to rotate them more than that since the car would never see traffic sign that are upside down. It is worth noticing that it could be interesting to do so for another dataset like classify galaxies! for example.
 
-<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
+<img src="Test_Img/roi_exm2.png"  title="Rotation">
 
 *2. Model architecture.*
 
