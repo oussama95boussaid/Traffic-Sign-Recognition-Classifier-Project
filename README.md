@@ -112,17 +112,20 @@ Adam Optimizer
 
 Adam offers several advantages over the simple tf.train.GradientDescentOptimizer. Foremost is that it uses moving averages of the parameters. The concept behind this is called "momentum". The provided learning rate is the maximum coefficient applied to the gradient during backpropagation. The Adam optimizer determines when to lower that learning rate for each parameter. This brings some computation overhead as this is performed for each training step (maintain the moving averages and variance, and calculate the scaled gradient). A simple tf.train.GradientDescentOptimizer could equally be used in your MLP, but would require more hyperparameter tuning before it would converge as quickly.
 
+ *Module Performance*
+ 
+<img src="learning_curve.png"  title="AlexNet Architecture">
+
 # *Test of my model on New Images*
 
 1. *Presentation of the images*
 
 Theses images have the same meaning that the ones of the German dataset but some might have some small differences like of example the presence of km/h on the 30 km/h speed limit sign or the width of some arrows. Other that that, these images do not present major problems of visibility that might trick the model but in order to perform well on these images, it comes down to how good were the images of the training data. I want to highlight here that I believe that these images were not very clear. I had a hard time determining the class of many of the images in the dataset myself.
 
-<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
+<img src="learning_curve.png"  title="AlexNet Architecture">
 
 *2. Predictions labels of these images and their top 5 softmax probabilities*
 
-<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
-
+<img src="learning_curve.png"  title="AlexNet Architecture">
 
 
