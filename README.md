@@ -86,7 +86,7 @@ For each image of each dataset, a region of interest is provided. It gives a pre
 
 What is recommended to do is to center the data so it has 0 mean. Instead, I remove 180 to each RGB channels. It is very similar and would perform well for my model. I normalized the scale of each image to range between -1 and 1. This allows a better convergence of the model because the computation of the gradient is facilitated.
 
-<img src="Test_Img/roi_exm2.png"  title="Normalization">
+<img src="Test_Img/augmented_img.png"  title="Normalization">
 
 It is important to note that the normalization needs to be applied to every set (training, validation et test sets) in order to train a working model.
 
