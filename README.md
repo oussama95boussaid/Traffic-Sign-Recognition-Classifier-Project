@@ -61,7 +61,9 @@ Most rare signs:
 - End of all speed and passing limits train samples: 210
 -
 Here is an visualization of some 5 randomly picked training examples for each class. As we can see, within each class there is a high variability in appearance due to different weather conditions, time of the day and image angle.
-§§§
+
+<img src="roi_exm2.png"  title="AlexNet Architecture">
+
 #Design and Test a Model Architecture
 
 1. *Image preprocessing*
@@ -78,7 +80,7 @@ Following a published baseline model on this problem I applied similar normaliza
 
 For each image of each dataset, a region of interest is provided. It gives a precise location to where the sign actually is. In order to maximize my chances that the model is going to learn features from the sign I crop the background to remove the noise as much as possible.
 
-<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
+<img src="roi_exm2.png"  title="AlexNet Architecture">
 
 *Normalization*
 
