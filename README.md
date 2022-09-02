@@ -1,5 +1,8 @@
 # Traffic-Sign-Recognition-Classifier-Project
 
+In this project, I used  deep neural networks and convolutional neural networks to classify traffic signs. Specifically, I trained a model to classify traffic signs from <a href="http://benchmark.ini.rub.de/?section=gtsrb&subsection=dataset" > the German Traffic Sign Dataset </a> .
+
+<a href="https://s3-us-west-1.amazonaws.com/udacity-selfdrivingcar/traffic-signs-data.zip" > Download the dataset </a>
 
 The goals / steps of this project are the following:
 
@@ -21,8 +24,6 @@ This is a summary. Continue further to read each in depth.
 - Test model on new images, Trained model tested on new image downloaded from web, and plotted its softmax probability.
 - Featuremap visualisation, Featuremap for all convolution layaer and pooling layer plotted.
 
-# *code*
-Here is an explanation of how I approached this project. If you want to dive in the code
 
 # *Data Set Summary & Exploration*
 
