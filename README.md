@@ -106,6 +106,9 @@ The first idea is to rotate the image a little bit. The angle is determined rand
 
 My final model consisted of the following layers:
 
+<img src="Lenet(CNN).png"  title="Rotation">
+
+
 # 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
 
 Adam Optimizer
