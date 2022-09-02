@@ -129,6 +129,6 @@ Theses images have the same meaning that the ones of the German dataset but some
 
 *2. Predictions labels of these images and their top 5 softmax probabilities*
 
-<img src="learning_curve.png"  title="learning_curve">
+<img src="SooftmaxProb.png"  title="SooftmaxProb">
 
 
