@@ -40,7 +40,7 @@ The data is provided in pickle files. It is already split in a training set, a v
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is ditributed across the different labels. 
 
-§§
+<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
 
 The average number of training examples per class is 809, the minimum is 180 and the maximum 2010, hence some labels are one order of magnitude more abundant than others.
 
@@ -77,12 +77,14 @@ Following a published baseline model on this problem I applied similar normaliza
 *ROI Cropping*
 
 For each image of each dataset, a region of interest is provided. It gives a precise location to where the sign actually is. In order to maximize my chances that the model is going to learn features from the sign I crop the background to remove the noise as much as possible.
-§§§
+
+<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
 
 *Normalization*
 
 What is recommended to do is to center the data so it has 0 mean. Instead, I remove 180 to each RGB channels. It is very similar and would perform well for my model. I normalized the scale of each image to range between -1 and 1. This allows a better convergence of the model because the computation of the gradient is facilitated.
-$$$
+
+<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
 
 It is important to note that the normalization needs to be applied to every set (training, validation et test sets) in order to train a working model.
 
@@ -95,7 +97,8 @@ In order to do so, I created 2 functions.
 *Rotation*
 
 The first idea is to rotate the image a little bit. The angle is determined randomly and bounded between -15° and +15°. It wouldn't make sense to rotate them more than that since the car would never see traffic sign that are upside down. It is worth noticing that it could be interesting to do so for another dataset like classify galaxies! for example.
-$$$
+
+<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
 
 *2. Model architecture.*
 
@@ -112,10 +115,12 @@ Adam offers several advantages over the simple tf.train.GradientDescentOptimizer
 1. *Presentation of the images*
 
 Theses images have the same meaning that the ones of the German dataset but some might have some small differences like of example the presence of km/h on the 30 km/h speed limit sign or the width of some arrows. Other that that, these images do not present major problems of visibility that might trick the model but in order to perform well on these images, it comes down to how good were the images of the training data. I want to highlight here that I believe that these images were not very clear. I had a hard time determining the class of many of the images in the dataset myself.
-$$$ 
+
+<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
 
 *2. Predictions labels of these images and their top 5 softmax probabilities*
-$$$
+
+<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
 
 
 
