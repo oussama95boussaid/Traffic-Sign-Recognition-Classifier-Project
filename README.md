@@ -40,7 +40,7 @@ The data is provided in pickle files. It is already split in a training set, a v
 
 Here is an exploratory visualization of the data set. It is a bar chart showing how the data is ditributed across the different labels. 
 
-<img src="alexnet-Archetecture.png"  title="AlexNet Architecture">
+<img src="training_set_counts.png"  title="AlexNet Architecture">
 
 The average number of training examples per class is 809, the minimum is 180 and the maximum 2010, hence some labels are one order of magnitude more abundant than others.
 
